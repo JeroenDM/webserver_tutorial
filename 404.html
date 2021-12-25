@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="error-message">404</h1>
+
+    <script>
+        function current_time_as_string() {
+            let now = new Date();
+            return now.getMinutes() + ":" + now.getSeconds();
+        }
+        
+        let error_msg = document.getElementById("error-message");
+        error_msg.innerText += " " + current_time_as_string();
+    </script>
+</body>
+
+</html>
